@@ -22,7 +22,7 @@
 
 
 
-listaDiscos = [ {'Nombre' : 'YHLT', 'Artista' : 'Bad Bunny', 'Año' : 2019, 'precio' : 20.4, 'Género' : 'Reggeaton'},
+listaDiscos = [ {'Nombre' : 'dmer', 'Artista' : 'Bad Bunny', 'Año' : 2019, 'precio' : 20.4, 'Género' : 'Reggeaton'},
                 {'Nombre' : 'Canto del loco', 'Artista' : 'Pepa', 'Año' : 2017, 'precio' : 34.6, 'Género' : 'Pop'},
                 {'Nombre' : 'LALA', 'Artista' : 'Pepe', 'Año' : 2026, 'precio' : 32.6, 'Género' : 'Black Metal'}]
 

@@ -1,7 +1,7 @@
 #RETO 4
 
 #Escribe un programa que almacene lenguajes de programación en una lista.
-#El programa deberá preguntar por consola si el usuario conoce o no el lenguaje. ç
+#El programa deberá preguntar por consola si el usuario conoce o no el lenguaje.
 # El usuario deberá responder "sí" o "no" y cualquier otra respuesta no será tenida en cuenta, 
 # preguntando de nuevo la misma pregunta:
 #¿Conoces el lenguaje de programación "lenguaje"? (si / no) donde "lenguaje" es cada uno de los 
@@ -12,3 +12,13 @@
 #TypeScript: sí
 #Python: sí
 #Dart: no
+
+Lenguajes = {
+    "Python",
+    "JavaScript"
+    "TypeScript"
+    "Dart"
+}
+count=0
+print("A continuación va a aparecer una lista de lenguajes de programación y usted tiene que indicar si conoce Y o no si no es el caso")
+

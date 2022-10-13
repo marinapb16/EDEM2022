@@ -5,3 +5,4 @@ cantidad = 0
 #Realiza un script que permita encontrar dentro de la lista aquellos elementos que sean tuplas. 
 # Cada vez que encuentre una tupla, deberá incrementarse la variable cantidad.
 #*** Pista: Haz uso de isinstance()
+
