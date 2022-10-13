@@ -1,3 +1,5 @@
 # EDEM2022
-Marina Pérez Barber
-clase de GIT
+# MARINA PÉREZ BARBER
+### MATEMÁTICAS Y FÍSICA
+### Master en Data Analytics EDEM
+![EDEM](https://avfcv.com/wp-content/uploads/2020/11/edem.png) 
