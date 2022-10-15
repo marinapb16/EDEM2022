@@ -20,7 +20,7 @@
 # (puedes coger la fecha actual a través de datetime), el dinero que se ahorra el usuario 
 # y el coste final de la compra.
 
-
+from datetime import datetime
 
 listaDiscos = [ {'Nombre' : 'dmer', 'Artista' : 'Bad Bunny', 'Año' : 2019, 'precio' : 20.4, 'Género' : 'Reggeaton'},
                 {'Nombre' : 'Canto del loco', 'Artista' : 'Pepa', 'Año' : 2017, 'precio' : 34.6, 'Género' : 'Pop'},
@@ -28,19 +28,53 @@ listaDiscos = [ {'Nombre' : 'dmer', 'Artista' : 'Bad Bunny', 'Año' : 2019, 'pre
 
 #print(listaDiscos) Check1
 
+
 #Bucle para imprimir por consola los discos de la lista para el usuario
 for idx, disco in enumerate(listaDiscos):
     print(f'Número disco {idx+1}: Nombre {disco["Nombre"]}, Artista {disco["Artista"]}, Precio {disco["precio"]}, Estilo {disco["Género"]}') #+1 porque el 0 lo queremos para mostrar ticket de compra
 
-#input para que el usuario seleccione un disco
-seleccion = int(input("Selecciona un disco de la lista (0 para terminar la compra) "))-1
-#check2
+carrito = list()
+while True:
 
-if listaDiscos[seleccion]['Género'] == 'Electro' or listaDiscos[seleccion]['Género'] == 'Black Metal':
-    precioCarrito = listaDiscos[seleccion]['precio'] * 0.7
-else:
-    precioCarrito = listaDiscos[seleccion]['precio']
+    #input para que el usuario seleccione un disco
+    seleccion = int(input("Selecciona un disco de la lista (0 para terminar la compra) "))-1
+    #check2
 
+    if seleccion == -1:
+        break   #para no caer en un bucle infinito, si pulsa 0, salimos del bucle
+    else:
+        carrito.append({'Nombre':listaDiscos[seleccion]["Nombre"], 'precio':listaDiscos[seleccion]["precio"], 'Género':listaDiscos[seleccion]["Género"]})
 
-print(precioCarrito)
+#print(carrito)
+#para comprobar que el append está funcionando bien
 
+precioCarrito = 0
+cantidadDescuento = 0
+
+#FORMA 1
+#for i in carrito: 
+#    if i['Género] == 'Electro' or i['Género'] == 'Black Metal'
+# ...
+#Esto sería otra manera de hacer el for, en i tenemos guardado un diccionario
+
+#FORMA 2
+for i in range(len(carrito)): #en este caso i es un número porque recorre longitud del diccionario
+
+    if carrito[i]['Género'] == 'Electro' or carrito[i]['Género'] == 'Black Metal':
+        precioCarrito += carrito[i]['precio'] * 0.7
+        cantidadDescuento += carrito[i]['precio'] * 0.3
+    else:
+        precioCarrito += carrito[i]['precio']
+
+#FORMA 3
+# for idx,i in enumerate(carrito):
+
+#      if i['Género] == 'Electro' or i['Género] == 'Black Metal':
+# ...
+#Utilizando el indice
+#       if carrito[idx]['Género'] == 'Electro' or carrito[idx]['Género'] == 'Black Metal'
+#...
+
+print(datetime.now())
+print('El precio total de su compra es: ', precioCarrito, '€')
+print('Su ahorro en esta compra ha sido de ', cantidadDescuento, '€')
