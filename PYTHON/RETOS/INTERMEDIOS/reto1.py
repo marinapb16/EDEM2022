@@ -22,9 +22,20 @@
 
 from datetime import datetime
 
-listaDiscos = [ {'Nombre' : 'dmer', 'Artista' : 'Bad Bunny', 'Año' : 2019, 'precio' : 20.4, 'Género' : 'Reggeaton'},
-                {'Nombre' : 'Canto del loco', 'Artista' : 'Pepa', 'Año' : 2017, 'precio' : 34.6, 'Género' : 'Pop'},
-                {'Nombre' : 'LALA', 'Artista' : 'Pepe', 'Año' : 2026, 'precio' : 32.6, 'Género' : 'Black Metal'}]
+listaDiscos = [ {'Nombre' : 'Born this way', 'Artista' : 'Lady Gaga', 'Año' : 2011, 'precio' : 20.4, 'Género' : 'Pop'},
+                {'Nombre' : 'Private dancer', 'Artista' : 'Tina turner', 'Año' : 1984, 'precio' : 34.6, 'Género' : 'Pop'},
+                {'Nombre' : 'Ross from friends', 'Artista' : 'Tread', 'Año' : 2018, 'precio' : 22.6, 'Género' : 'Electro'},
+                {'Nombre' : 'Azure', 'Artista' : 'SkyH1', 'Año' : 2021, 'precio' : 31.7, 'Género' : 'Electro'},
+                {'Nombre' : 'The last don', 'Artista' : 'Don Omar', 'Año' : 2003, 'precio' : 10.3, 'Género' : 'Reggaeton'},
+                {'Nombre' : 'Un verano sin ti', 'Artista' : 'Bad Bunny', 'Año' : 2022, 'precio' : 27.5, 'Género' : 'Reggaeton'},
+                {'Nombre' : 'The Dark side of the moon', 'Artista' : 'Pink Floyd', 'Año' : 1973, 'precio' : 38.4, 'Género' : 'Rock'},
+                {'Nombre' : 'Black in Black', 'Artista' : 'ACDC', 'Año' : 1980, 'precio' : 17.8, 'Género' : 'Rock'},
+                {'Nombre' : 'Torn Arteries', 'Artista' : 'Carcass', 'Año' : 2021, 'precio' : 18.9, 'Género' : 'Metal'},
+                {'Nombre' : 'Senjutsu', 'Artista' : 'Iron Maiden', 'Año' : 2021, 'precio' : 32.6, 'Género' : 'Metal'},
+                {'Nombre' : 'Focus', 'Artista' : 'Cynic', 'Año' : 1993, 'precio' : 28.4, 'Género' : 'Death Metal'},
+                {'Nombre' : 'Human', 'Artista' : 'Death', 'Año' : 2021, 'precio' : 27.1, 'Género' : 'Death Metal'},
+                {'Nombre' : 'Black Metal', 'Artista' : 'Venom', 'Año' : 1982, 'precio' : 38.4, 'Género' : 'Black Metal'},
+                {'Nombre' : 'Filosofem', 'Artista' : 'Burzum', 'Año' : 1996, 'precio' : 23.8, 'Género' : 'Black Metal'} ]
 
 #print(listaDiscos) Check1
 
