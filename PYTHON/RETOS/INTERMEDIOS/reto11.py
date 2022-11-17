@@ -41,11 +41,24 @@ def opciones ():
 
 #Añadir cliente
 def addcliente():
-  cliente = {"NIF" : str(input('Introduce el NIF: \n')),
-            "Nombre" : str(input('Introduce el nombre: \n')),
-            "Telefono" : str(input('Introduce el telefono: \n')),
-            "Email" : str(input('Intorduce el email: \n')),
-            "Preferente" : bool(input('¿Es un cliente preferente?: \n'))}
+ 
+  NIF = str(input('Introduce el NIF: \n'))
+  nombre = str(input('Introduce el nombre: \n'))
+  telefono = str(input('Introduce el telefono: \n'))
+  email = str(input('Intorduce el email: \n'))
+  preferente = input('El cliente cliente es preferente (si/no)')
+
+  if preferente == 'si':
+    preferente = True
+  elif preferente == 'no':
+    preferente = False
+
+  cliente = {"NIF" : NIF,
+            "Nombre" : nombre,
+            "Telefono" : telefono,
+            "Email" : email,
+            "Preferente" : preferente}
+
   clientes.append(cliente)
   opciones()
 

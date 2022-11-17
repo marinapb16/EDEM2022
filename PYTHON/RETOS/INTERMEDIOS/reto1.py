@@ -48,7 +48,7 @@ carrito = list()
 while True:
 
     #input para que el usuario seleccione un disco
-    seleccion = int(input("Selecciona un disco de la lista (0 para terminar la compra) "))-1
+    seleccion = int(input("Selecciona un disco de la lista (0 para terminar la compra): "))-1
     #check2
 
     if seleccion == -1:
@@ -62,13 +62,6 @@ while True:
 precioCarrito = 0
 cantidadDescuento = 0
 
-#FORMA 1
-#for i in carrito: 
-#    if i['Género] == 'Electro' or i['Género'] == 'Black Metal'
-# ...
-#Esto sería otra manera de hacer el for, en i tenemos guardado un diccionario
-
-#FORMA 2
 for i in range(len(carrito)): #en este caso i es un número porque recorre longitud del diccionario
 
     if carrito[i]['Género'] == 'Electro' or carrito[i]['Género'] == 'Black Metal':
@@ -77,14 +70,7 @@ for i in range(len(carrito)): #en este caso i es un número porque recorre longi
     else:
         precioCarrito += carrito[i]['precio']
 
-#FORMA 3
-# for idx,i in enumerate(carrito):
 
-#      if i['Género] == 'Electro' or i['Género] == 'Black Metal':
-# ...
-#Utilizando el indice
-#       if carrito[idx]['Género'] == 'Electro' or carrito[idx]['Género'] == 'Black Metal'
-#...
 
 print(datetime.now())
 print('El precio total de su compra es: ', precioCarrito, '€')
