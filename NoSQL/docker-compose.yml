@@ -20,7 +20,7 @@ services:
   # Data Ingestion Tool: Apache NiFi
   nifi:
     image: apache/nifi:latest
-    container_name: nifi
+    container_name: nifi2
     restart: always
     ports:
       - 8443:8443
